@@ -5,24 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit">
   
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    body {
+      background-color: hsl(212, 45%, 89%);
+      font-family:'Outfit';
+    }
+
+    .card {
+      background-color: hsl(0, 0%, 100%);
+      width: 375px;
+      max-width: 1440px;
+      margin: auto;
+      margin-bottom: 0.5rem;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 30px;
+    }
+
+    .card > img {
+      border-radius: inherit;
+      width: 100%;
+    }
+
+    .card > p {
+      color: hsl(220, 15%, 55%);
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    .card > h2 {
+      color: hsl(218, 44%, 22%);
+      font-weight: 700;
+    }
+
+    .card > p,
+    .card > h2 {
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+    }
+
+    .card-container {
+      padding: 20px 0;
+    }
+
+    .attribution { font-size: 11px; text-align: center; margin: auto; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+  <div class="card-container">
+    <div class="card">
+      <img src="./images/image-qr-code.png" style="max-width: 500px" />
+      <h2>Improve your front-end skills by building projects</h2>
+      <p><strong>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</strong></p>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/NeoDaigoro">Marshal Poke</a>.
   </div>
 </body>
 </html>
